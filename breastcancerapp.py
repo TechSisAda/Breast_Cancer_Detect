@@ -7,13 +7,13 @@ Original file is located at
     https://colab.research.google.com/drive/1nHJ1tIRqKZ7-kjJVdcxQPr8lOAzeDZ8G
 """
 
-!touch cancerapp.py
+touch cancerapp.py
 
 from tensorflow.keras.models import load_model
 model = load_model('/content/breast_cancer_model.keras')
 model.summary()
 
-!pip install streamlit
+pip install streamlit
 
 import streamlit as st
 import numpy as np
